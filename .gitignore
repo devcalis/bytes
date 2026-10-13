@@ -1,0 +1,11 @@
+# originais baixados do site e do Instagram (a página usa as versões .webp otimizadas)
+assets/img/site/
+assets/img/insta/*.jpg
+
+# configurações locais de ferramentas de IA/editor
+.claude/
+
+# sistema
+.DS_Store
+Thumbs.db
+*.log

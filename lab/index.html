@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Laboratório · Bytes Eletrônicos</title>
+  <link rel="icon" type="image/png" href="../assets/img/bytes-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="../assets/img/fachada-noite.webp">
+  <link rel="stylesheet" href="lab.css?v=1">
+  <script>
+    document.documentElement.classList.add('js');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('rm');
+  </script>
+</head>
+<!-- Laboratório Bytes Eletrônicos · rodada 1. Não é linkado nem publicado.
+     5 sessões de página de vendas × 5 opções cada. O cliente escolhe uma por sessão. -->
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.1A8 8 0 1 1 20 12z"/><path d="M9 9.5c.3 2 2 4 4.5 4.8l1.2-1.1 1.6.8c-.3 1-1.2 1.6-2.3 1.5C10.8 15.2 8.4 12.8 8 9.6 8 8.5 8.6 7.7 9.6 7.4l.8 1.6z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h4"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 4L3 8l4 4M3 8h13a4 4 0 0 1 4 4M17 20l4-4-4-4M21 16H8a4 4 0 0 1-4-4"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16M9 20v-6h6v6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 0-5-5z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3.5" y="13.5" width="4" height="6" rx="1.5"/><rect x="16.5" y="13.5" width="4" height="6" rx="1.5"/><path d="M18.5 19.5c0 1-1.5 1.5-4 1.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </svg>
+
+  <header class="labbar">
+    <a class="labbar__brand" href="#top"><img src="../assets/img/bytes-icon.png" alt="" width="256" height="256">Laboratório</a>
+    <nav class="labbar__nav" aria-label="Sessões">
+      <a href="#marca">Marca</a><a href="#s1">1 Capa</a><a href="#s2">2 Vitrine</a><a href="#s3">3 Por que</a><a href="#s4">4 BytesLab</a><a href="#s5">5 Fechar</a><a href="#rodape">Rodapé</a>
+    </nav>
+    <span class="labbar__note">Rodada 1 · não publicado</span>
+  </header>
+
+  <main id="top">
+
+    <!-- =================================================================
+         BRIEFING · personalidade + paleta
+         ================================================================= -->
+    <section class="brief" id="marca">
+      <div class="wrap">
+        <p class="label">Análise · @byteseletronicos + byteseletronicos.com.br</p>
+        <h1 class="brief__title display" data-lines>A loja de tecnologia <em>de confiança</em> de Cacoal.</h1>
+        <div class="brief__grid">
+          <article class="brief__card">
+            <h2>Personalidade</h2>
+            <p><b>O especialista do bairro com vitrine de shopping.</b> A Bytes fala como quem entende do assunto e não precisa provar: posta notícia de lançamento no mesmo dia, mostra o aparelho na mão, abre a bancada do laboratório. Os valores que ela mesma publica: <i>transparência, humildade, capricho e amor pelo que faz</i>.</p>
+            <ul class="brief__tags"><li>Técnico, sem ser frio</li><li>Seguro e direto</li><li>Atual (notícia no dia)</li><li>Local e presencial</li></ul>
+          </article>
+          <article class="brief__card">
+            <h2>O que vende</h2>
+            <p>iPhone novo e seminovo conferido, Android (Xiaomi, POCO, Realme, Honor, Motorola), JBL, smartwatch, tablet e acessório. Mais a <b>BytesLab</b>: microsolda de placa, troca de vidro traseiro a laser e polimento de tela.</p>
+            <ul class="brief__nums"><li><b>7</b><span>anos</span></li><li><b>19,8 mil</b><span>seguidores</span></li><li><b>1 ano</b><span>de garantia</span></li><li><b>12x</b><span>no boleto, sem banco</span></li></ul>
+          </article>
+          <article class="brief__card brief__card--pal">
+            <h2>Paleta</h2>
+            <p>Saiu da própria fachada: o azul do logo no letreiro, o laranja do neon da porta e o azul-noite do shopping à noite.</p>
+            <ul class="pal">
+              <li style="--c:#050B1F"><i></i><b>Noite</b><span>#050B1F · fundo</span></li>
+              <li style="--c:#0066FF"><i></i><b>Azul Bytes</b><span>#0066FF · marca</span></li>
+              <li style="--c:#FF6A13"><i></i><b>Neon</b><span>#FF6A13 · BytesLab / destaque</span></li>
+              <li style="--c:#EEF2FA"><i></i><b>Gelo</b><span>#EEF2FA · seções claras</span></li>
+            </ul>
+            <p class="brief__type"><span class="display">Barlow Condensed Itálico</span> conversa com o logo inclinado · <span>Inter</span> no texto.</p>
+          </article>
+        </div>
+        <p class="brief__struct"><b>Estrutura de vendas em 5 sessões:</b> 1 Capa com a frase que prende · 2 Vitrine com preço e botão · 3 Por que comprar aqui (garantia, crediário, troca) · 4 BytesLab (o que só eles fazem) · 5 Fechar a venda (WhatsApp, loja, horário). Rodapé padrão no fim.</p>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SESSÃO 1 · CAPA
+         ================================================================= -->
+    <div class="lab-group" id="s1"><p>Sessão 1 · Capa</p><h2>A frase que prende</h2><span>Cinco jeitos de abrir a página. A 1C é a versão PRO: a câmera entra na loja com o scroll.</span></div>
+
+    <!-- 1A · Vitrine neon -->
+    <section class="lab-v h1a" id="v1a">
+      <p class="lab-tag"><b>1A</b> Vitrine neon <small>Foto real da fachada à noite, título gigante e os números de confiança logo abaixo do botão.</small></p>
+      <img class="h1a__bg" src="../assets/img/fachada-noite.webp" alt="" width="1920" height="1080" data-par="10">
+      <div class="wrap h1a__in">
+        <p class="pill" data-fade><span class="dot"></span>Cacoal Shopping · há 7 anos</p>
+        <h2 class="h1a__title display" data-lines>Tecnologia original, <em>garantia</em> de verdade.</h2>
+        <p class="h1a__sub" data-fade>iPhone, Xiaomi, Realme e JBL com nota fiscal e 1 ano de garantia em tudo. Parcele em 12x no boleto, sem banco.</p>
+        <div class="row" data-fade>
+          <a class="btn" href="#" data-wa="Olá! Vim pelo site e quero ver os aparelhos disponíveis."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Ver no WhatsApp</span></span></a>
+          <a class="btn btn--ghost" href="#s2"><span class="btn__t"><span>Ver ofertas</span></span></a>
+        </div>
+        <ul class="trust" data-fade><li><svg class="i"><use href="#i-shield"/></svg>1 ano de garantia</li><li><svg class="i"><use href="#i-receipt"/></svg>Nota fiscal</li><li><svg class="i"><use href="#i-swap"/></svg>Aceita seu usado</li></ul>
+      </div>
+    </section>
+
+    <!-- 1B · Produto herói com palavra atrás -->
+    <section class="lab-v h1b" id="v1b">
+      <p class="lab-tag"><b>1B</b> Produto herói <small>"BYTES" gigante atrás do iPhone 17 Pro; cada camada anda numa velocidade. Cards de vidro com o preço real.</small></p>
+      <span class="h1b__word display" aria-hidden="true" data-par="-18">BYTES</span>
+      <img class="h1b__phone" src="../assets/img/p/iphone-17-pro.webp" alt="iPhone 17 Pro nas cores azul, prata e laranja" width="900" height="733" data-par="8">
+      <div class="wrap h1b__in">
+        <h2 class="h1b__title display" data-lines>O próximo celular <em>é aqui.</em></h2>
+        <a class="btn" href="#" data-wa="Olá! Vim pelo site e quero saber do iPhone 17 Pro."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Quero o meu</span></span></a>
+      </div>
+      <div class="glass h1b__g1" data-float="-.5"><small>iPhone 17 Pro 256 GB</small><b>12x R$ 753,39</b><span>ou R$ 7.897 à vista</span></div>
+      <div class="glass h1b__g2" data-float="-.25"><svg class="i"><use href="#i-shield"/></svg><span><b>1 ano de garantia</b><small>em todos os produtos</small></span></div>
+    </section>
+
+    <!-- 1C · PRO: entrar na loja -->
+    <section class="lab-v h1c" id="v1c">
+      <p class="lab-tag lab-tag--pro"><b>1C</b> PRO · Entrar na loja <small>Seção pinada: a câmera avança pela porta da Bytes. No site final vira sequência de frames gerada por IA (fachada → balcão → vitrine de iPhone → bancada do laboratório).</small></p>
+      <div class="h1c__stage">
+        <img class="h1c__img" src="../assets/img/fachada-noite.webp" alt="Fachada da Bytes Eletrônicos no Cacoal Shopping à noite" width="1920" height="1080">
+        <img class="h1c__img h1c__img--2" src="../assets/img/parede-produtos.webp" alt="" width="1000" height="1000">
+        <img class="h1c__img h1c__img--3" src="../assets/img/bancada-celulares.webp" alt="" width="1000" height="1000">
+        <span class="h1c__shade"></span>
+        <h2 class="h1c__cap display" data-at="0"><span>Bem-vindo à <em>Bytes.</em></span></h2>
+        <h2 class="h1c__cap display" data-at=".3"><span>Tudo <em>original.</em> Tudo conferido.</span></h2>
+        <h2 class="h1c__cap display" data-at=".58"><span>1 ano de <em>garantia</em> em tudo.</span></h2>
+        <div class="h1c__cap h1c__end" data-at=".82">
+          <h2 class="display">Escolha o seu. <em>A gente entrega.</em></h2>
+          <a class="btn" href="#" data-wa="Olá! Vim pelo site e quero ajuda para escolher meu celular."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Falar com a Bytes</span></span></a>
+        </div>
+        <div class="h1c__bar"><i></i></div>
+      </div>
+    </section>
+
+    <!-- 1D · Editorial claro -->
+    <section class="lab-v h1d" id="v1d">
+      <p class="lab-tag"><b>1D</b> Editorial claro <small>Fundo gelo, texto à esquerda e um mosaico com fotos reais da loja que se abre em cortina.</small></p>
+      <div class="wrap h1d__grid">
+        <div class="h1d__copy">
+          <p class="label" data-fade>Bytes Eletrônicos · Cacoal Shopping</p>
+          <h2 class="h1d__title display" data-lines>Sua escolha <em>segura</em> em tecnologia.</h2>
+          <p class="h1d__sub" data-fade>Novos e seminovos selecionados, conferidos antes da entrega e com 1 ano de garantia.</p>
+          <div class="row" data-fade>
+            <a class="btn" href="#" data-wa="Olá! Vim pelo site e quero ver os aparelhos disponíveis."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Chamar no WhatsApp</span></span></a>
+            <a class="link" href="#s2">Ver ofertas <svg class="i"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="h1d__mosaic">
+          <figure class="h1d__m h1d__m--a" data-curtain><img src="../assets/img/parede-produtos.webp" alt="Parede da loja com JBL, iPad e acessórios iluminados" width="1000" height="1000"></figure>
+          <figure class="h1d__m h1d__m--b" data-curtain><img src="../assets/img/insta/02-iphone-mao.webp" alt="iPhone na mão de um cliente" width="360" height="640"></figure>
+          <figure class="h1d__m h1d__m--c" data-curtain><img src="../assets/img/bancada-celulares.webp" alt="Bancada com celulares Android expostos" width="1000" height="1000"></figure>
+          <span class="h1d__badge"><b>7</b> anos em Cacoal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1E · Leque de aparelhos -->
+    <section class="lab-v h1e" id="v1e">
+      <p class="lab-tag"><b>1E</b> Leque de aparelhos <small>Cinco celulares reais da loja abrem em leque; embaixo, faixa com as marcas oficiais.</small></p>
+      <div class="wrap h1e__in">
+        <p class="pill" data-fade><span class="dot"></span>Apple · Xiaomi · Realme · Honor · Motorola</p>
+        <h2 class="h1e__title display" data-lines>Todas as marcas. <em>Uma loja.</em></h2>
+        <a class="btn" href="#" data-wa="Olá! Vim pelo site e quero comparar modelos." data-fade><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Comparar no WhatsApp</span></span></a>
+      </div>
+      <div class="h1e__fan" aria-hidden="true">
+        <img src="../assets/img/p/redmi-note-15-pro.webp" alt="" style="--r:-24deg;--x:-120%">
+        <img src="../assets/img/p/poco-f8-pro.webp" alt="" style="--r:-12deg;--x:-60%">
+        <img src="../assets/img/p/iphone-14-pro.webp" alt="" style="--r:0deg;--x:0%">
+        <img src="../assets/img/p/xiaomi-17t-pro.webp" alt="" style="--r:12deg;--x:60%">
+        <img src="../assets/img/p/poco-x8-pro-max.webp" alt="" style="--r:24deg;--x:120%">
+      </div>
+      <div class="marq" aria-hidden="true"><div class="marq__t"><span>APPLE</span><i></i><span>XIAOMI</span><i></i><span>REALME</span><i></i><span>HONOR</span><i></i><span>MOTOROLA</span><i></i><span>JBL</span><i></i><span>APPLE</span><i></i><span>XIAOMI</span><i></i><span>REALME</span><i></i><span>HONOR</span><i></i><span>MOTOROLA</span><i></i><span>JBL</span><i></i></div></div>
+    </section>
+
+    <!-- =================================================================
+         SESSÃO 2 · VITRINE
+         ================================================================= -->
+    <div class="lab-group" id="s2"><p>Sessão 2 · Vitrine</p><h2>Preço e botão na cara</h2><span>Produtos e preços reais do site de hoje. Todo botão abre o WhatsApp de vendas com o modelo já escrito.</span></div>
+
+    <!-- 2A · Abas por ecossistema -->
+    <section class="lab-v v2a" id="v2a">
+      <p class="lab-tag"><b>2A</b> Abas por ecossistema <small>iPhone, Android e Áudio numa aba só. Troca suave dos cards ao clicar.</small></p>
+      <div class="wrap">
+        <div class="head"><p class="label">Disponível na Bytes</p><h2 class="h2 display" data-lines>Escolha pelo <em>seu mundo.</em></h2></div>
+        <div class="tabs" role="tablist" data-tabs>
+          <button role="tab" aria-selected="true" data-k="ios">iPhone</button><button role="tab" aria-selected="false" data-k="and">Android</button><button role="tab" aria-selected="false" data-k="aud">Áudio e relógio</button>
+        </div>
+        <div class="cards" data-2a></div>
+      </div>
+    </section>
+
+    <!-- 2B · Switcher pinado -->
+    <section class="lab-v v2b" id="v2b">
+      <p class="lab-tag"><b>2B</b> Switcher pinado <small>A seção trava e o produto central troca no scroll: fundo, nome, preço e botão mudam juntos (ref. Panini).</small></p>
+      <div class="v2b__stage" data-2b>
+        <div class="wrap v2b__grid">
+          <div class="v2b__copy">
+            <p class="label" data-2b-tag>iPhone · Novo</p>
+            <h2 class="v2b__name display" data-2b-name>iPhone 17 Pro</h2>
+            <p class="v2b__spec" data-2b-spec>256 GB · 1 ano de garantia</p>
+            <p class="v2b__price"><small>12x de</small><b data-2b-inst>R$ 753,39</b><span data-2b-cash>ou R$ 7.897 à vista</span></p>
+            <a class="btn btn--light" href="#" data-2b-cta><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Comprar pelo WhatsApp</span></span></a>
+          </div>
+          <div class="v2b__media"><img data-2b-img src="../assets/img/p/iphone-17-pro.webp" alt="iPhone 17 Pro" width="900" height="733"></div>
+          <ol class="v2b__idx" data-2b-idx></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2C · Bento de ofertas -->
+    <section class="lab-v v2c" id="v2c">
+      <p class="lab-tag"><b>2C</b> Bento de ofertas <small>Um destaque grande e os outros em volta. O card acompanha o mouse com brilho azul.</small></p>
+      <div class="wrap">
+        <div class="head head--row"><h2 class="h2 display" data-lines>Ofertas da <em>semana.</em></h2><a class="link" href="#" data-wa="Olá! Vim pelo site e quero a lista completa de ofertas.">Ver lista completa <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        <div class="bento" data-2c></div>
+      </div>
+    </section>
+
+    <!-- 2D · Trilho horizontal -->
+    <section class="lab-v v2d" id="v2d">
+      <p class="lab-tag"><b>2D</b> Trilho horizontal <small>O scroll vertical vira horizontal e os produtos passam como uma vitrine de shopping.</small></p>
+      <div class="v2d__pin">
+        <div class="wrap v2d__head"><p class="label">Vitrine</p><h2 class="h2 display" data-lines>Passa a <em>vitrine.</em></h2></div>
+        <div class="v2d__track" data-2d></div>
+      </div>
+    </section>
+
+    <!-- 2E · Novo x Seminovo -->
+    <section class="lab-v v2e" id="v2e">
+      <p class="lab-tag"><b>2E</b> Novo ou seminovo <small>Responde a dúvida de quem tem medo do usado: chave Novo/Seminovo e o selo "conferido + 1 ano de garantia" igual nos dois.</small></p>
+      <div class="wrap">
+        <div class="head head--center"><h2 class="h2 display" data-lines>Novo ou seminovo, <em>a garantia é a mesma.</em></h2></div>
+        <div class="toggle" role="group" aria-label="Condição" data-2e-toggle><button aria-pressed="true" data-k="novo">Novo</button><button aria-pressed="false" data-k="usado">Seminovo conferido</button><i></i></div>
+        <div class="cards cards--3" data-2e></div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SESSÃO 3 · POR QUE COMPRAR NA BYTES
+         ================================================================= -->
+    <div class="lab-group" id="s3"><p>Sessão 3 · Por que a Bytes</p><h2>Tirar o medo da compra</h2><span>Garantia, crediário sem banco, troca do usado e loja física. É aqui que a venda se decide.</span></div>
+
+    <!-- 3A · Bento de garantias -->
+    <section class="lab-v v3a" id="v3a">
+      <p class="lab-tag"><b>3A</b> Bento de garantias <small>Seis motivos num grid. Os dois que mais vendem (garantia e boleto) ficam grandes.</small></p>
+      <div class="wrap">
+        <div class="head"><p class="label">Por que comprar na Bytes</p><h2 class="h2 display" data-lines>Comprar tecnologia <em>sem medo.</em></h2></div>
+        <div class="v3a__grid">
+          <article class="tile tile--big tile--blue" data-tile><svg class="i"><use href="#i-shield"/></svg><b class="display">1 ano</b><h3>de garantia em todos os produtos</h3><p>Novo ou seminovo. Acompanhe a garantia pela sua conta Bytes.</p></article>
+          <article class="tile tile--big tile--orange" data-tile><svg class="i"><use href="#i-card"/></svg><b class="display">12x</b><h3>no boleto, sem banco</h3><p>Crediário próprio da Bytes. Pré-análise rápida pelo WhatsApp.</p></article>
+          <article class="tile" data-tile><svg class="i"><use href="#i-swap"/></svg><h3>Troque seu usado</h3><p>Seu aparelho entra como parte do pagamento. Avaliação na hora.</p></article>
+          <article class="tile" data-tile><svg class="i"><use href="#i-receipt"/></svg><h3>Original com nota</h3><p>Marcas oficiais, sempre com nota fiscal.</p></article>
+          <article class="tile" data-tile><svg class="i"><use href="#i-check"/></svg><h3>Conferido antes</h3><p>Cada aparelho é testado antes de ir pra sua mão.</p></article>
+          <article class="tile" data-tile><svg class="i"><use href="#i-store"/></svg><h3>Loja física</h3><p>Cacoal Shopping, todo dia. Você vê, pega e leva.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3B · Texto que acende -->
+    <section class="lab-v v3b" id="v3b">
+      <p class="lab-tag"><b>3B</b> Texto que acende <small>Uma frase grande se acende palavra por palavra no scroll; os quatro pilares aparecem embaixo.</small></p>
+      <div class="wrap">
+        <p class="v3b__text display" data-glow>Na Bytes você compra o original, com nota, conferido na sua frente, parcela no boleto sem banco e ainda sai com <em>1 ano de garantia.</em></p>
+        <ul class="v3b__list">
+          <li data-fade><svg class="i"><use href="#i-shield"/></svg><b>Garantia de 1 ano</b></li>
+          <li data-fade><svg class="i"><use href="#i-card"/></svg><b>12x no boleto</b></li>
+          <li data-fade><svg class="i"><use href="#i-swap"/></svg><b>Troca do usado</b></li>
+          <li data-fade><svg class="i"><use href="#i-store"/></svg><b>Loja no shopping</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3C · Cards empilhados -->
+    <section class="lab-v v3c" id="v3c">
+      <p class="lab-tag"><b>3C</b> Cards empilhados <small>Cada motivo é um card de tela cheia que encolhe e escurece quando o próximo passa por cima.</small></p>
+      <div class="wrap">
+        <div class="head head--center"><p class="label">4 motivos</p><h2 class="h2 display" data-lines>O que vem <em>junto</em> com o seu celular.</h2></div>
+        <div class="stack">
+          <article class="stack__c" style="--bg:#0066FF"><div><span class="display">01</span><h3 class="display">1 ano de garantia</h3><p>Em todos os produtos, novos e seminovos. Garantia digital na sua conta.</p></div><img src="../assets/img/insta/02-iphone-mao.webp" alt="iPhone na mão" width="360" height="640" loading="lazy"></article>
+          <article class="stack__c" style="--bg:#FF6A13"><div><span class="display">02</span><h3 class="display">12x no boleto</h3><p>Crediário próprio, sem banco e sem cartão. Pré-análise pelo WhatsApp.</p></div><img src="../assets/img/insta/06-realme-cores.webp" alt="Celulares Realme coloridos" width="360" height="640" loading="lazy"></article>
+          <article class="stack__c" style="--bg:#111a33"><div><span class="display">03</span><h3 class="display">Seu usado vale</h3><p>Traga o aparelho antigo: avaliação presencial e desconto na hora.</p></div><img src="../assets/img/insta/10-xiaomi.webp" alt="Xiaomi na mão" width="360" height="640" loading="lazy"></article>
+          <article class="stack__c" style="--bg:#EEF2FA;--fg:#050B1F"><div><span class="display">04</span><h3 class="display">Loja de verdade</h3><p>No Cacoal Shopping, aberta todos os dias. Atendimento de gente.</p></div><img src="../assets/img/fachada-shopping.webp" alt="Fachada da loja" width="1000" height="1000" loading="lazy"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D · Números + faixa -->
+    <section class="lab-v v3d" id="v3d">
+      <p class="lab-tag"><b>3D</b> Números + faixa <small>Quatro números contam sozinhos e duas faixas correm em sentidos opostos guiadas pelo scroll.</small></p>
+      <div class="wrap v3d__nums">
+        <div><b class="display" data-count="7">0</b><span>anos em Cacoal</span></div>
+        <div><b class="display" data-count="19.8" data-dec="1" data-suf=" mil">0</b><span>seguidores no Instagram</span></div>
+        <div><b class="display" data-count="12" data-suf="x">0</b><span>no boleto, sem banco</span></div>
+        <div><b class="display" data-count="1" data-suf=" ano">0</b><span>de garantia em tudo</span></div>
+      </div>
+      <div class="band band--l" aria-hidden="true"><span>ORIGINAL COM NOTA ✦ GARANTIA DE 1 ANO ✦ TROCA DO USADO ✦ ORIGINAL COM NOTA ✦ GARANTIA DE 1 ANO ✦ TROCA DO USADO ✦</span></div>
+      <div class="band band--r" aria-hidden="true"><span>12X NO BOLETO ✦ CONFERIDO ANTES ✦ CACOAL SHOPPING ✦ 12X NO BOLETO ✦ CONFERIDO ANTES ✦ CACOAL SHOPPING ✦</span></div>
+    </section>
+
+    <!-- 3E · Simulador de pagamento -->
+    <section class="lab-v v3e" id="v3e">
+      <p class="lab-tag"><b>3E</b> Simulador de pagamento <small>A pessoa escolhe o aparelho e vê na hora Pix, cartão e boleto. O botão leva a escolha pro WhatsApp.</small></p>
+      <div class="wrap v3e__grid">
+        <div>
+          <p class="label">Como pagar</p>
+          <h2 class="h2 display" data-lines>Do seu jeito, <em>sem complicar.</em></h2>
+          <p class="v3e__sub">Pix com desconto, 12x sem juros no cartão ou 12x no boleto pelo crediário da Bytes.</p>
+          <label class="sel"><span>Aparelho</span><select data-3e-sel></select></label>
+        </div>
+        <div class="v3e__card">
+          <img data-3e-img src="../assets/img/p/poco-f8-pro.webp" alt="" width="900" height="900">
+          <ul>
+            <li><span><svg class="i"><use href="#i-bolt"/></svg>Pix</span><b data-3e-pix>—</b></li>
+            <li><span><svg class="i"><use href="#i-card"/></svg>Cartão 12x sem juros</span><b data-3e-card>—</b></li>
+            <li><span><svg class="i"><use href="#i-receipt"/></svg>Boleto 12x · sem banco</span><b>Pré-análise</b></li>
+          </ul>
+          <a class="btn" href="#" data-3e-cta><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Simular no WhatsApp</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SESSÃO 4 · BYTESLAB
+         ================================================================= -->
+    <div class="lab-group" id="s4"><p>Sessão 4 · BytesLab</p><h2>O que só a Bytes faz</h2><span>A assistência é o diferencial que nenhuma loja da cidade tem. Aqui o laranja do neon assume.</span></div>
+
+    <!-- 4A · Laboratório laranja -->
+    <section class="lab-v v4a" id="v4a">
+      <p class="lab-tag"><b>4A</b> Laboratório laranja <small>Fundo escuro com o mockup oficial da BytesLab e os quatro serviços em lista numerada.</small></p>
+      <div class="wrap v4a__grid">
+        <div>
+          <img class="v4a__logo" src="../assets/img/byteslab-logo.png" alt="BytesLab · Laboratório Mobile" width="600" height="550">
+          <h2 class="h2 display" data-lines>Além de vender, <em>a gente cuida.</em></h2>
+          <ol class="svc">
+            <li data-fade><span>01</span><div><h3>Reparo avançado em placa</h3><p>Microsolda de iPhone. Poucos fazem no Brasil.</p></div></li>
+            <li data-fade><span>02</span><div><h3>Troca de vidro traseiro</h3><p>Remoção a laser UV, sem danificar o aparelho.</p></div></li>
+            <li data-fade><span>03</span><div><h3>Polimento de tela</h3><p>Some com riscos leves e micro-arranhões.</p></div></li>
+            <li data-fade><span>04</span><div><h3>Serviços gerais</h3><p>Tela, bateria, câmera, conector, alto-falante e microfone.</p></div></li>
+          </ol>
+          <a class="btn btn--orange" href="#" data-wa="Olá! Vim pelo site e preciso de um orçamento na BytesLab." data-sup><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Pedir orçamento</span></span></a>
+        </div>
+        <figure class="v4a__img" data-curtain><img src="../assets/img/byteslab-mockup.webp" alt="Identidade da BytesLab aplicada em tablets e celulares" width="1600" height="1067" loading="lazy" data-par="6"></figure>
+      </div>
+    </section>
+
+    <!-- 4B · Linha do reparo -->
+    <section class="lab-v v4b" id="v4b">
+      <p class="lab-tag"><b>4B</b> Linha do reparo <small>Uma trilha de circuito (igual ao símbolo da BytesLab) se desenha no scroll e acende cada etapa.</small></p>
+      <div class="wrap">
+        <div class="head head--center"><p class="label">BytesLab · Laboratório mobile</p><h2 class="h2 display" data-lines>Do defeito ao <em>funcionando.</em></h2></div>
+        <div class="v4b__track" data-4b>
+          <span class="v4b__line"><i></i></span>
+          <ol>
+            <li><span class="v4b__dot"><svg class="i"><use href="#i-headset"/></svg></span><h3>Você chama</h3><p>Manda o defeito no WhatsApp de suporte.</p></li>
+            <li><span class="v4b__dot"><svg class="i"><use href="#i-chip"/></svg></span><h3>Diagnóstico</h3><p>Equipamento profissional encontra a causa.</p></li>
+            <li><span class="v4b__dot"><svg class="i"><use href="#i-tool"/></svg></span><h3>Reparo</h3><p>Técnico especializado, peça de qualidade.</p></li>
+            <li><span class="v4b__dot"><svg class="i"><use href="#i-shield"/></svg></span><h3>Garantia</h3><p>Peças com até 1 ano de garantia.</p></li>
+          </ol>
+        </div>
+        <div class="center"><a class="btn btn--orange" href="#" data-wa="Olá! Vim pelo site e meu aparelho está com defeito." data-sup><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Falar com o suporte</span></span></a></div>
+      </div>
+    </section>
+
+    <!-- 4C · Painéis que expandem -->
+    <section class="lab-v v4c" id="v4c">
+      <p class="lab-tag"><b>4C</b> Painéis que expandem <small>Quatro painéis com fotos do Instagram; o que recebe o mouse abre e mostra o serviço.</small></p>
+      <div class="wrap">
+        <div class="head head--row"><h2 class="h2 display" data-lines>Serviços que <em>só a Bytes</em> faz.</h2><img class="v4c__logo" src="../assets/img/byteslab-logo.png" alt="BytesLab" width="600" height="550"></div>
+        <div class="acc4">
+          <article class="acc4__p is-on" tabindex="0"><img src="../assets/img/insta/08-dono.webp" alt="" width="360" height="640" loading="lazy"><div><span>01</span><h3 class="display">Microsolda</h3><p>Reparo avançado em placa de iPhone.</p></div></article>
+          <article class="acc4__p" tabindex="0"><img src="../assets/img/insta/02-iphone-mao.webp" alt="" width="360" height="640" loading="lazy"><div><span>02</span><h3 class="display">Vidro traseiro</h3><p>Remoção a laser UV, sem danificar.</p></div></article>
+          <article class="acc4__p" tabindex="0"><img src="../assets/img/insta/10-xiaomi.webp" alt="" width="360" height="640" loading="lazy"><div><span>03</span><h3 class="display">Polimento</h3><p>Tira riscos leves da tela.</p></div></article>
+          <article class="acc4__p" tabindex="0"><img src="../assets/img/insta/07-notebook.webp" alt="" width="360" height="640" loading="lazy"><div><span>04</span><h3 class="display">Gerais</h3><p>Tela, bateria, câmera, conector e mais.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4D · Lista com foto fixa -->
+    <section class="lab-v v4d" id="v4d">
+      <p class="lab-tag"><b>4D</b> Lista com foto fixa <small>A foto fica parada à esquerda e troca conforme cada serviço passa à direita.</small></p>
+      <div class="wrap v4d__grid" data-4d>
+        <div class="v4d__sticky">
+          <figure class="v4d__fig">
+            <img class="is-on" src="../assets/img/insta/08-dono.webp" alt="" width="360" height="640">
+            <img src="../assets/img/insta/02-iphone-mao.webp" alt="" width="360" height="640">
+            <img src="../assets/img/insta/10-xiaomi.webp" alt="" width="360" height="640">
+            <img src="../assets/img/insta/07-notebook.webp" alt="" width="360" height="640">
+          </figure>
+        </div>
+        <div class="v4d__list">
+          <p class="label">BytesLab</p>
+          <h2 class="h2 display" data-lines>Assistência <em>de referência</em> em Cacoal.</h2>
+          <article><h3 class="display">Reparo em placa</h3><p>Microsolda de iPhone, um serviço que poucos fazem no Brasil.</p></article>
+          <article><h3 class="display">Vidro traseiro a laser</h3><p>Laser UV remove o vidro sem danificar o aparelho.</p></article>
+          <article><h3 class="display">Polimento de tela</h3><p>Remove riscos leves e micro-arranhões.</p></article>
+          <article><h3 class="display">Tudo do dia a dia</h3><p>Tela, bateria, câmera, conector, alto-falante, microfone.</p><a class="btn btn--orange" href="#" data-wa="Olá! Vim pelo site e preciso de um orçamento na BytesLab." data-sup><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Pedir orçamento</span></span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4E · Quem faz -->
+    <section class="lab-v v4e" id="v4e">
+      <p class="lab-tag"><b>4E</b> Quem faz <small>Puxa o lado humano: foto do Instagram, os valores que a própria Bytes publica e os serviços em linha.</small></p>
+      <div class="wrap v4e__grid">
+        <figure class="v4e__photo" data-curtain><img src="../assets/img/insta/08-dono.webp" alt="Atendimento da Bytes mostrando um celular" width="360" height="640" loading="lazy" data-par="6"><figcaption><svg class="i"><use href="#i-ig"/></svg>@byteseletronicos</figcaption></figure>
+        <div>
+          <p class="label">7 anos de Bytes</p>
+          <p class="v4e__quote display" data-glow>Servindo com transparência, humildade, capricho e <em>muito amor pelo que fazemos.</em></p>
+          <ul class="chips"><li>Microsolda</li><li>Vidro a laser</li><li>Polimento</li><li>Tela</li><li>Bateria</li><li>Câmera</li><li>Conector</li></ul>
+          <a class="btn btn--orange" href="#" data-wa="Olá! Vim pelo site e preciso de assistência." data-sup><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Falar com a BytesLab</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SESSÃO 5 · FECHAR A VENDA
+         ================================================================= -->
+    <div class="lab-group" id="s5"><p>Sessão 5 · Fechar a venda</p><h2>Contato a um toque</h2><span>Último empurrão: WhatsApp, loja e horário sem procurar.</span></div>
+
+    <!-- 5A · CTA gigante -->
+    <section class="lab-v v5a" id="v5a">
+      <p class="lab-tag"><b>5A</b> CTA gigante <small>Frase enorme que sobe letra por letra e dois botões: vendas e suporte.</small></p>
+      <div class="wrap">
+        <h2 class="v5a__title display" data-chars>Bora fechar <em>o seu?</em></h2>
+        <div class="row row--center">
+          <a class="btn btn--light btn--lg" href="#" data-wa="Olá! Vim pelo site e quero fechar a compra."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>WhatsApp vendas</span></span></a>
+          <a class="btn btn--ghost btn--lg" href="#" data-wa="Olá! Vim pelo site e preciso de suporte." data-sup><svg class="i"><use href="#i-headset"/></svg><span class="btn__t"><span>Suporte</span></span></a>
+        </div>
+        <p class="v5a__meta"><svg class="i"><use href="#i-pin"/></svg>Cacoal Shopping · Seg a Sáb 9h–21h · Dom e feriados 14h–20h</p>
+      </div>
+    </section>
+
+    <!-- 5B · Loja + mapa -->
+    <section class="lab-v v5b" id="v5b">
+      <p class="lab-tag"><b>5B</b> Loja + mapa <small>Mapa real do Cacoal Shopping ao lado de um cartão com horário e os dois WhatsApps.</small></p>
+      <div class="wrap v5b__grid">
+        <div class="v5b__card">
+          <p class="label">Venha conhecer</p>
+          <h2 class="h2 display" data-lines>A loja fica no <em>Cacoal Shopping.</em></h2>
+          <ul class="info">
+            <li><svg class="i"><use href="#i-clock"/></svg><span><b>Seg a Sáb</b> 9h às 21h</span></li>
+            <li><svg class="i"><use href="#i-clock"/></svg><span><b>Dom e feriados</b> 14h às 20h</span></li>
+            <li><svg class="i"><use href="#i-wa"/></svg><span><b>Vendas</b> (69) 99292-8687</span></li>
+            <li><svg class="i"><use href="#i-headset"/></svg><span><b>Suporte</b> (69) 99382-7505</span></li>
+          </ul>
+          <div class="row">
+            <a class="btn" href="#" data-wa="Olá! Vim pelo site e quero passar na loja."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Chamar agora</span></span></a>
+            <a class="link" href="https://share.google/gwALTsKgKDxRpW8J2" target="_blank" rel="noopener">Como chegar <svg class="i"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="v5b__map"><iframe title="Mapa do Cacoal Shopping" src="https://www.google.com/maps?q=Cacoal+Shopping,+Cacoal+-+RO&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </section>
+
+    <!-- 5C · Atendimento guiado -->
+    <section class="lab-v v5c" id="v5c">
+      <p class="lab-tag"><b>5C</b> Atendimento guiado <small>Dois toques: o que você precisa + seu nome. A mensagem chega pronta no WhatsApp certo (vendas ou suporte).</small></p>
+      <div class="wrap v5c__grid">
+        <div>
+          <p class="label">Atendimento rápido</p>
+          <h2 class="h2 display" data-lines>Fala o que você <em>precisa.</em></h2>
+          <p class="v5c__sub">A gente responde no WhatsApp, com gente de verdade.</p>
+        </div>
+        <form class="v5c__form" data-5c novalidate>
+          <fieldset><legend>1. O que você procura?</legend>
+            <div class="opts">
+              <label><input type="radio" name="o" value="comprar um iPhone" checked><span>iPhone</span></label>
+              <label><input type="radio" name="o" value="comprar um Android"><span>Android</span></label>
+              <label><input type="radio" name="o" value="comprar fone, caixa ou relógio"><span>Áudio e relógio</span></label>
+              <label><input type="radio" name="o" value="trocar meu usado"><span>Trocar meu usado</span></label>
+              <label><input type="radio" name="o" value="consertar meu aparelho" data-sup><span>Conserto</span></label>
+              <label><input type="radio" name="o" value="parcelar no boleto"><span>12x no boleto</span></label>
+            </div>
+          </fieldset>
+          <label class="field"><span>2. Seu nome</span><input name="n" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?" required></label>
+          <p class="err" role="alert" hidden>Digite seu nome pra gente te chamar certo.</p>
+          <button class="btn btn--lg" type="submit"><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Enviar no WhatsApp</span></span></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 5D · Fachada com vidro -->
+    <section class="lab-v v5d" id="v5d">
+      <p class="lab-tag"><b>5D</b> Fachada + cartão de vidro <small>Foto da porta da loja em tela cheia com zoom suave; o contato fica num cartão de vidro por cima.</small></p>
+      <img class="v5d__bg" src="../assets/img/fachada-shopping.webp" alt="" width="1000" height="1000" loading="lazy">
+      <div class="wrap">
+        <div class="glass v5d__card">
+          <img class="v5d__logo" src="../assets/img/bytes-logo.png" alt="Bytes" width="600" height="160">
+          <h2 class="display" data-lines>A porta está <em>aberta.</em></h2>
+          <p>Cacoal Shopping · todos os dias. Ou resolve tudo agora pelo WhatsApp.</p>
+          <a class="btn btn--light btn--block" href="#" data-wa="Olá! Vim pelo site e quero atendimento."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>WhatsApp vendas</span></span></a>
+          <div class="v5d__mini"><a href="https://share.google/gwALTsKgKDxRpW8J2" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Como chegar</a><a href="#" data-wa="Olá! Vim pelo site e preciso de suporte." data-sup><svg class="i"><use href="#i-headset"/></svg>Suporte</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5E · Dúvidas + CTA -->
+    <section class="lab-v v5e" id="v5e">
+      <p class="lab-tag"><b>5E</b> Dúvidas + CTA <small>Quebra as quatro objeções mais comuns antes do botão final.</small></p>
+      <div class="wrap v5e__grid">
+        <div>
+          <p class="label">Antes de fechar</p>
+          <h2 class="h2 display" data-lines>Ficou alguma <em>dúvida?</em></h2>
+          <a class="btn btn--lg" href="#" data-wa="Olá! Vim pelo site e tenho uma dúvida."><svg class="i"><use href="#i-wa"/></svg><span class="btn__t"><span>Perguntar no WhatsApp</span></span></a>
+        </div>
+        <div class="faq">
+          <details open><summary>A garantia vale para seminovo também?<svg class="i"><use href="#i-plus"/></svg></summary><p>Vale. Todo produto da Bytes, novo ou seminovo, sai com 1 ano de garantia e você acompanha pela sua conta.</p></details>
+          <details><summary>Dá pra parcelar sem cartão?<svg class="i"><use href="#i-plus"/></svg></summary><p>Dá. O crediário próprio da Bytes parcela em até 12x no boleto, sem banco. A pré-análise é pelo WhatsApp.</p></details>
+          <details><summary>Vocês aceitam meu celular usado?<svg class="i"><use href="#i-plus"/></svg></summary><p>Aceitamos como parte do pagamento. A avaliação é feita na hora, na loja.</p></details>
+          <details><summary>Os aparelhos são originais?<svg class="i"><use href="#i-plus"/></svg></summary><p>Sim. Marcas oficiais, com nota fiscal e conferidos antes da entrega.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         RODAPÉ PADRÃO
+         ================================================================= -->
+    <div class="lab-group" id="rodape"><p>Rodapé padrão</p><h2>Pequeno e em ícones</h2><span>Logo pequena, redes e acessos em ícones com legenda ao passar o mouse. Termos e privacidade também viram ícone.</span></div>
+
+    <footer class="foot">
+      <div class="wrap foot__in">
+        <a class="foot__logo" href="#top" aria-label="Bytes Eletrônicos, voltar ao topo"><img src="../assets/img/bytes-logo.png" alt="Bytes" width="600" height="160"></a>
+        <nav class="foot__ico" aria-label="Contato e redes">
+          <a href="https://www.instagram.com/byteseletronicos/" target="_blank" rel="noopener" data-tip="Instagram" aria-label="Instagram"><svg class="i"><use href="#i-ig"/></svg></a>
+          <a href="#" data-wa="Olá! Vim pelo site." data-tip="WhatsApp vendas" aria-label="WhatsApp vendas"><svg class="i"><use href="#i-wa"/></svg></a>
+          <a href="#" data-wa="Olá! Vim pelo site e preciso de suporte." data-sup data-tip="Suporte" aria-label="WhatsApp suporte"><svg class="i"><use href="#i-headset"/></svg></a>
+          <a href="https://share.google/gwALTsKgKDxRpW8J2" target="_blank" rel="noopener" data-tip="Cacoal Shopping" aria-label="Localização no Cacoal Shopping"><svg class="i"><use href="#i-pin"/></svg></a>
+          <a href="https://byteseletronicos.com.br/" target="_blank" rel="noopener" data-tip="Consultar garantia" aria-label="Consultar garantia"><svg class="i"><use href="#i-shield"/></svg></a>
+        </nav>
+        <nav class="foot__ico foot__ico--sm" aria-label="Documentos">
+          <a href="#" data-tip="Termos de uso" aria-label="Termos de uso"><svg class="i"><use href="#i-doc"/></svg></a>
+          <a href="#" data-tip="Política de privacidade" aria-label="Política de privacidade"><svg class="i"><use href="#i-lock"/></svg></a>
+        </nav>
+        <p class="foot__copy">© <span data-year>2026</span> Bytes Eletrônicos</p>
+      </div>
+    </footer>
+
+    <section class="lab-end">
+      <p>Fim da rodada 1. Me diga uma letra por sessão (ex.: <b>1C · 2B · 3A · 4A · 5B</b>) e eu monto a página final. Dá pra misturar elementos de duas opções.</p>
+      <p><small>Preços e produtos copiados do byteseletronicos.com.br hoje. Fotos da loja e do Instagram oficiais. Na 1C final, a sequência de frames da "câmera entrando na loja" é gerada por IA.</small></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="lab.js?v=1"></script>
+</body>
+</html>
