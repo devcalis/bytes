@@ -54,8 +54,10 @@ ul, ol { list-style: none; }
 .loader__bar { width: 180px; height: 2px; background: rgba(255, 255, 255, .12); }
 .loader__bar i { display: block; height: 100%; background: var(--blue); transform-origin: left; transform: scaleX(0); }
 
-/* ---------- Navbar pílula ---------- */
-.nav { position: fixed; z-index: 100; top: 14px; left: 50%; translate: -50% 0; width: min(980px, calc(100% - 24px)); display: flex; align-items: center; gap: 16px; padding: 8px 8px 8px 22px;
+/* ---------- Navbar pílula ----------
+   Centralizada com margin auto, não com `translate`: o GSAP anima o transform e zera o translate,
+   o que jogava a barra pra direita durante a entrada. Mesmo motivo na palavra BYTES do hero. */
+.nav { position: fixed; z-index: 100; top: 14px; left: 0; right: 0; margin-inline: auto; width: min(980px, calc(100% - 24px)); display: flex; align-items: center; gap: 16px; padding: 8px 8px 8px 22px;
   border-radius: 999px; border: 1px solid transparent; transition: background .5s, border-color .5s, transform .6s var(--ease); }
 .nav.is-solid { background: rgba(5, 11, 31, .72); border-color: var(--line); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
 .nav.is-hidden { transform: translateY(-140%); }
@@ -67,7 +69,7 @@ ul, ol { list-style: none; }
 
 /* ---------- 1 · Capa ---------- */
 .hero { position: relative; overflow: hidden; min-height: 100svh; display: grid; place-items: center; padding: 110px 0 80px; background: radial-gradient(60% 50% at 50% 55%, rgba(0, 102, 255, .45), transparent 70%), var(--night); }
-.hero__word { position: absolute; left: 50%; top: 40%; translate: -50% -50%; font-size: clamp(140px, 34vw, 520px); color: transparent; -webkit-text-stroke: 2px rgba(61, 139, 255, .6); white-space: nowrap; line-height: .8; }
+.hero__word { position: absolute; left: 0; right: 0; top: 40%; margin-top: -.4em; text-align: center; font-size: clamp(140px, 34vw, 520px); color: transparent; -webkit-text-stroke: 2px rgba(61, 139, 255, .6); white-space: nowrap; line-height: .8; }
 .hero__phone { position: relative; z-index: 2; width: min(560px, 82vw); filter: drop-shadow(0 40px 60px rgba(0, 0, 0, .55)); }
 .hero__in { position: relative; z-index: 3; display: grid; justify-items: center; gap: 18px; text-align: center; margin-top: -40px; }
 .hero__title { font-size: clamp(44px, 5.6vw, 88px); }
